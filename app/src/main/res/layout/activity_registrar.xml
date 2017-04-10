@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/th_add_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="Cadastrar"
+        app:subtitle="todos os campos são obrigatórios"
+        android:background="@color/roteirosPrimary"
+        style="@style/Avisos"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/nome"
+                    style="@style/EditTextPadrao"
+                    android:capitalize="words"
+                    android:hint="Digite seu nome"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/sobrenome"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Digite seu sobrenome"
+                    style="@style/EditTextPadrao"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/data_nascimento"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Data de nascimento"
+                    style="@style/EditTextPadrao"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecione sua célula:"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/celulas"
+                style="@style/SpinnerPadrao"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/login"
+                    style="@style/EditTextPadrao"
+                    android:hint="Digite seu login"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/senha"
+                    style="@style/EditTextPadrao"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Digite sua senha"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/confirma_senha"
+                    style="@style/EditTextPadrao"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Digite novamente senha"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/registrar"
+                android:layout_marginTop="10dp"
+                android:background="#4f88bf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registrar"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

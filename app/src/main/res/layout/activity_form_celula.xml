@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vidasnoaltarmda.celulas.Activities.FormAvisoActivity"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/th_add_aviso"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="Editar Célula"
+        android:background="@color/roteirosPrimary"
+        style="@style/Avisos"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittext_nome_lider"
+                style="@style/EditTextPadrao"
+                android:hint="Nome do Líder"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/data_celula"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="date"
+                style="@style/EditTextPadrao"
+                android:hint="Dia da Célula"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/horario_celula"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="time"
+                style="@style/EditTextPadrao"
+                android:hint="Horário da Célula"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittext_local"
+                style="@style/EditTextPadrao"
+                android:hint="Local"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittext_dia_jejum"
+                style="@style/EditTextPadrao"
+                android:hint="Dia Jejum"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittext_dia_semana"
+                style="@style/EditTextPadrao"
+                android:hint="Dia Semana Jejum"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edittext_versiculo"
+                style="@style/EditTextPadrao"
+                android:hint="Versículo"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/button_salvar"
+            android:text="Salvar"
+            style="@style/ButtonBlue" />
+
+    </LinearLayout></LinearLayout>

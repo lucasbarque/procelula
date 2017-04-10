@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/th_aviso"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="Aviso"
+        android:background="@color/avisosPrimaryDark"
+        app:subtitle="Fique por dentro"
+        style="@style/Avisos"
+        />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e6e6e6"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageview_lista_vazia"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aviso_erro"/>
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/avisoslist"
+                android:cacheColorHint="#000000"
+                android:divider="#979797"
+                android:dividerHeight="1dp"
+                android:layout_gravity="center_horizontal" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_aviso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/add"
+                app:elevation="10dp"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+
+                app:backgroundTint="@color/principalPrimary"
+                />
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:autoText="false"
+        android:background="#D32F2F"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Ganhar e Cuidar \né a Batida do Nosso Coração"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="grey">#ddd</color>
+    <color name="black">#000</color>
+
+    <color name="principalPrimary">#4CAF50</color>
+    <color name="principalPrimaryDark">#388E3C</color>
+    <color name="principalPrimaryAccent">#00BCD4</color>
+
+
+    <color name="avisosPrimary">#F44336</color>
+    <color name="avisosPrimaryDark">#D32F2F</color>
+    <color name="avisosPrimaryAccent">#03A9F4</color>
+
+    <color name="escalaPrimary">#2196F3</color>
+    <color name="escalaPrimaryDark">#1976D2</color>
+    <color name="escalaPrimaryAccent">#FF5252</color>
+
+    <color name="roteirosPrimary">#4CAF50</color>
+    <color name="roteirosPrimaryDark">#388E3C</color>
+    <color name="roteirosPrimaryAccent">#00BCD4</color>
+
+    <color name="programacoesPrimary">#FFC107</color>
+    <color name="programacoesPrimaryDark">#FFA000</color>
+    <color name="programacoesPrimaryAccent">#03A9F4</color>
+
+    <color name="aniversariantesPrimary">#FFC107</color>
+    <color name="aniversariantesPrimaryDark">#FFA000</color>
+    <color name="aniversariantesPrimaryAccent">#03A9F4</color>
+
+    <color name="gePrimary">#F44336</color>
+    <color name="gePrimaryDark">#D32F2F</color>
+    <color name="gePrimaryAccent">#03A9F4</color>
+
+    <color name="celulaPrimary">#2196F3</color>
+    <color name="celulaPrimaryDark">#1976D2</color>
+    <color name="celulaPrimaryAccent">#FF5252</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="primary_info">#2196F3</color>
+    <color name="primary_error">#D32F2F</color>
+    <color name="primary_alert">#FFA000</color>
+    <color name="primary_success">#388E3C</color>
+    <color name="branco">#fff</color>
+    <color name="txt_padrao">#000</color>
+
+
+    <!--Cores TOPO-->
+    <color name="top_verde">#73c233</color>
+    <color name="top_azul">#5493bf</color>
+    <color name="top_vermelho">#db0004</color>
+    <color name="top_amarelo">#e9e635</color>
+
+
 </resources>

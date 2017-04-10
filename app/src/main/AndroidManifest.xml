@@ -2,22 +2,67 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="estacio.br.com.procelula">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.MyTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.LoginActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".Activities.SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.RegistrarActivity"
+            android:label="@string/title_activity_registrar" />
+        <activity
+            android:name=".Activities.PrincipalActivity"
+            android:label="@string/title_activity_principal" />
+        <activity
+            android:name=".Activities.ProgramacaoActivity"
+            android:label="@string/title_activity_programacao" />
+        <activity
+            android:name=".Activities.ProgramacaoSelecionadaActivity"
+            android:label="@string/title_activity_programacao_selecionada" />
+        <activity
+            android:name=".Activities.AniversariantesActivity"
+            android:label="@string/title_activity_aniversariantes" />
+        <activity
+            android:name=".Activities.GEActivity"
+            android:label="@string/title_activity_ge" />
+        <activity
+            android:name=".Activities.AvisoActivity"
+            android:label="@string/tittle_activity_aviso" />
+        <activity
+            android:name=".Activities.CelulaActivity"
+            android:label="@string/tittle_activity_celula" />
+        <activity
+            android:name=".Activities.FormAvisoActivity"
+            android:label="@string/title_activity_form_aviso"></activity>
+        <activity
+            android:name=".Activities.FormGEActivity"
+            android:label="@string/title_activity_form_ge"></activity>
+        <activity
+            android:name=".Activities.FormProgramacaoActivity"
+            android:label="@string/title_activity_form_programacao"></activity>
+
+        <activity
+            android:name=".Activities.CelulaEditarActivity"
+            android:label="@string/title_activity_form_celula_editar"></activity>
     </application>
+
 
 </manifest>

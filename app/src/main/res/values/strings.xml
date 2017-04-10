@@ -1,4 +1,28 @@
 <resources>
-    <string name="app_name">ProCelula</string>
+    <string name="app_name">Células IBVA</string>
     <string name="action_settings">Settings</string>
+    <string name="action_sair">Sair</string>
+    <string name="action_adicionar">Adicionar</string>
+    <string name="action_editar">Editar</string>
+    <string name="title_activity_registrar">Registrar</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_roteiro">Roteiros</string>
+    <string name="roteiroactivity_selecionar_roteiro">Selecione o roteiro</string>
+    <string name="title_activity_programacao">Programações</string>
+    <string name="programacao_selecionar_programacao">Selecione a programação</string>
+    <string name="title_activity_programacao_selecionada">Programação</string>
+    <string name="title_activity_aniversariantes">Aniversariantes</string>
+    <string name="title_activity_ge">Grupos Evangelísticos</string>
+    <string name="tittle_activity_aviso">Avisos</string>
+    <string name="tittle_activity_celula">Célula</string>
+    <string name="tittle_activity_escala">Escala</string>
+    <string name="title_activity_imagem_ampliada">Imagem</string>
+    <string name="title_activity_form_aviso">Formulário Avisos</string>
+    <string name="title_activity_form_ge">Formulário GE</string>
+    <string name="title_activity_form_programacao">Formulário Programação</string>
+    <string name="title_activity_form_escala">Formulário Escala</string>
+    <string name="action_deletar">Deletar</string>
+    <string name="title_activity_form_celula_editar">Editar</string>
+    <string name="creditos">Créditos</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
 </resources>
