@@ -16,11 +16,6 @@ import estacio.br.com.procelula.R;
 import estacio.br.com.procelula.Utils.Utils;
 
 
-/**
- * Created by barque on 14/03/2016.
- */
-
-
 public class CelulaActivity extends ActionBarActivity implements View.OnClickListener {
     public static int RQ_EDITAR_CELULA = 1;
 

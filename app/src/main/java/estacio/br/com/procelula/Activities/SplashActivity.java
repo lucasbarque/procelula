@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Barque on 01/02/2017.
- */
+
 
 public class SplashActivity extends AppCompatActivity {
 

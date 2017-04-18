@@ -15,9 +15,6 @@ import estacio.br.com.procelula.Dados.Programacao;
 import estacio.br.com.procelula.Utils.ConnectionManager;
 import estacio.br.com.procelula.Utils.Utils;
 
-/**
- * Created by thiago on 24/03/2016.
- */
 //Retorna as programacoes do banco filtrando por celula
 public class ProgramacaoDAO {
     public ArrayList<Programacao> retornaProgramacoes(Celula celula) throws SQLException {

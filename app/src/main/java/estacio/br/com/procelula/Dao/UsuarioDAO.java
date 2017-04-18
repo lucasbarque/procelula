@@ -12,9 +12,6 @@ import estacio.br.com.procelula.Dados.Usuario;
 import estacio.br.com.procelula.Utils.ConnectionManager;
 import estacio.br.com.procelula.Utils.Utils;
 
-/**
- * Created by thiago on 06/03/2016.
- */
 public class UsuarioDAO {
     private final String TABELA = "usuarios";
 

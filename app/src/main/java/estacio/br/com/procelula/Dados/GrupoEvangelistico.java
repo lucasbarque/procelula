@@ -2,9 +2,7 @@ package estacio.br.com.procelula.Dados;
 
 import java.io.Serializable;
 
-/**
- * Created by barque on 20/03/2016.
- */
+
 public class GrupoEvangelistico implements Serializable {
 
     private int id_ge;

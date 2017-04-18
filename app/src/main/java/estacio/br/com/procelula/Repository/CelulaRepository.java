@@ -16,9 +16,6 @@ import estacio.br.com.procelula.Dados.Celula;
 import estacio.br.com.procelula.Utils.Constantes;
 
 
-/**
- * Created by Barque on 28/01/2017.
- */
 
 public class CelulaRepository extends SQLiteOpenHelper {
 

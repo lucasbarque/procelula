@@ -12,9 +12,7 @@ import estacio.br.com.procelula.Dados.Celula;
 import estacio.br.com.procelula.Dados.GrupoEvangelistico;
 import estacio.br.com.procelula.Utils.ConnectionManager;
 
-/**
- * Created by barque on 24/03/2016.
- */
+
 public class GrupoEvangelisticoDAO {
 
     private final String TABELA = "grupos_evangelisticos"; //Nome da tabela do banco dados que a classe vai trabalhar

@@ -5,9 +5,6 @@ import android.widget.TextView;
 
 import java.io.Serializable;
 
-/**
- * Created by barque on 20/03/2016.
- */
 public class Programacao implements Serializable {
 
     public static String DIRETORIO_IMAGENS_PROGRAMACAO = "/programacao";

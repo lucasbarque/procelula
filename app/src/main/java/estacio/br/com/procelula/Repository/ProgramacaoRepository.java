@@ -16,10 +16,6 @@ import estacio.br.com.procelula.Dados.Programacao;
 import estacio.br.com.procelula.Utils.Constantes;
 
 
-/**
- * Created by Barque on 28/01/2017.
- */
-
 public class ProgramacaoRepository extends SQLiteOpenHelper {
 
     public ProgramacaoRepository(Context context){

@@ -18,9 +18,7 @@ import estacio.br.com.procelula.R;
 import estacio.br.com.procelula.Utils.TipoMsg;
 import estacio.br.com.procelula.Utils.Utils;
 
-/**
- * Created by barque on 26/04/2016.
- */
+
 public class FormGEActivity extends ActionBarActivity implements View.OnClickListener {
         private Celula celula;
         private EditText edittextNome;

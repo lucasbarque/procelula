@@ -11,9 +11,7 @@ import estacio.br.com.procelula.Dados.Aviso;
 import estacio.br.com.procelula.Dados.Celula;
 import estacio.br.com.procelula.Utils.ConnectionManager;
 
-/**
- * Created by barque on 24/03/2016.
- */
+
 public class AvisoDAO {
 
     private final String TABELA = "avisos"; //Nome da tabela do banco dados que a classe vai trabalhar

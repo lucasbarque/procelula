@@ -18,9 +18,7 @@ import java.util.Locale;
 import estacio.br.com.procelula.Dados.GrupoEvangelistico;
 import estacio.br.com.procelula.Utils.Constantes;
 
-/**
- * Created by Barque on 28/01/2017.
- */
+
 
 public class GERepository extends SQLiteOpenHelper {
 

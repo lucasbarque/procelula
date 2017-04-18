@@ -15,9 +15,7 @@ import estacio.br.com.procelula.Dados.Roteiro;
 import estacio.br.com.procelula.Utils.ConnectionManager;
 import estacio.br.com.procelula.Utils.Utils;
 
-/**
- * Created by thiago on 24/03/2016.
- */
+
 public class RoteiroDAO {
     public ArrayList<Roteiro> retornaRoteiros() throws SQLException {
         ArrayList<Roteiro> roteiros = new ArrayList<>();

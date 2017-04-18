@@ -5,9 +5,6 @@ import android.os.SystemClock;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Barque on 01/02/2017.
- */
 
 public class CelulasApp extends Application {
 

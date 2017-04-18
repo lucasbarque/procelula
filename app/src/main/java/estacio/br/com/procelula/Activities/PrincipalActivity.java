@@ -27,30 +27,25 @@ public class PrincipalActivity extends AppCompatActivity {
 
     public static final String UPLOAD_URL = "http://www.vidasnoaltar.com/web_services/getVersao.php";
     private LinearLayout aviso;
-    private LinearLayout escala;
-    private LinearLayout roteiro;
     private LinearLayout programacao;
     private LinearLayout aniversariante;
     private LinearLayout ge;
     private LinearLayout celula;
-    private LinearLayout site;
     private Toolbar mToolbar;
-    // private Toolbar mToolbarBottom;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        //TODO implementar selector para efeito de click botoes tela principal
-        getAviso().setOnTouchListener((View.OnTouchListener) this);
+
+        getAviso().setOnTouchListener ((View.OnTouchListener) this);
         getProgramacao().setOnTouchListener((View.OnTouchListener) this);
         getAniversariante().setOnTouchListener((View.OnTouchListener) this);
         getGe().setOnTouchListener((View.OnTouchListener) this);
         getCelula().setOnTouchListener((View.OnTouchListener) this);
 
         mToolbar = (Toolbar) findViewById(R.id.th_main);
-        mToolbar.setTitle("Pro Célula");
+        mToolbar.setTitle("ProCélula");
         setSupportActionBar(mToolbar);
 
         new CheckVersao().execute();
@@ -59,7 +54,6 @@ public class PrincipalActivity extends AppCompatActivity {
     //Cria o menu da actionbar (barra no topo da tela)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_principal, menu);
         return true;
     }
@@ -67,12 +61,7 @@ public class PrincipalActivity extends AppCompatActivity {
     //Método executado ao selecionar opção da actionbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. TODO The action bar will <verificar necessidade>
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_sair) {
             Utils.limpaSharedPreferences(this);
             Intent intent = new Intent(this, LoginActivity.class);
@@ -83,7 +72,6 @@ public class PrincipalActivity extends AppCompatActivity {
             Utils.showMsgAlertOK(PrincipalActivity.this,"Créditos de Desenvolvimento", "Lucas Barque, Fernando, Vinicius e Jean\n Versão 1.1.1", TipoMsg.INFO);
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -101,14 +89,10 @@ public class PrincipalActivity extends AppCompatActivity {
             //mostra janela de progresso
             progressDialog = ProgressDialog.show(PrincipalActivity.this, "Aguarde por favor", "Verificando dados...", true);
         }
-
         @Override
         protected String doInBackground(Void... params) {
-
             HashMap<String,String> data = new HashMap<>();
-
             String result = rh.sendGetRequest(UPLOAD_URL);
-
             return result;
         }
 
