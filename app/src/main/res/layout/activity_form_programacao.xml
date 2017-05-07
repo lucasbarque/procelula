@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vidasnoaltarmda.celulas.Activities.FormAvisoActivity">
+    tools:context="estacio.br.com.procelula.Activities.FormAvisoActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/th_add_programacao"

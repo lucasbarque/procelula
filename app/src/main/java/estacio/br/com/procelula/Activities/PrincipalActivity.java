@@ -22,7 +22,7 @@ import estacio.br.com.procelula.Utils.Utils;
 
 public class PrincipalActivity extends ActionBarActivity implements View.OnTouchListener {
 
-    public static final String UPLOAD_URL = "http://www.vidasnoaltar.com/web_services/getVersao.php";
+    public static final String UPLOAD_URL = "http://vidasnoaltar.com/outros/sistema-celulas/api/versao";
     private LinearLayout aviso;
     private LinearLayout programacao;
     private LinearLayout aniversariante;

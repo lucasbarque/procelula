@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.vidasnoaltarmda.celulas.Activities.FormAvisoActivity"
+    tools:context="estacio.br.com.procelula.Activities.FormAvisoActivity"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar

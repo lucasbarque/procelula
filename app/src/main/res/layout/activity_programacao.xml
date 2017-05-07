@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.vidasnoaltarmda.celulas.Activities.ProgramacaoActivity">
+    tools:context="estacio.br.com.procelula.Activities.ProgramacaoActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/th_programacao"
@@ -13,7 +13,6 @@
         android:layout_height="?actionBarSize"
         app:title="Programação"
         android:background="@color/programacoesPrimaryDark"
-        app:subtitle="Fique atento, participe!"
         style="@style/Avisos"
         />
 

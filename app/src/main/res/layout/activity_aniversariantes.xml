@@ -14,7 +14,6 @@
         android:layout_height="?actionBarSize"
         app:title="Aniversariantes do mês"
         android:background="@color/aniversariantesPrimaryDark"
-        app:subtitle="Desejamos parabéns!"
         style="@style/Avisos"
         />
 
@@ -57,17 +56,39 @@
 </LinearLayout>
         </LinearLayout>
 
-    <TextView
-        android:id="@+id/footer"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:autoText="false"
-        android:background="@color/aniversariantesPrimaryDark"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Ganhar e Cuidar \né a Batida do Nosso Coração"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold" />
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/top_verde" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/top_azul" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/top_vermelho" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/top_amarelo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/top_verde" />
+    </LinearLayout>
 </LinearLayout>
