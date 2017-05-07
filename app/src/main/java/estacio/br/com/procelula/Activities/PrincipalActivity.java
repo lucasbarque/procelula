@@ -1,29 +1,26 @@
 package estacio.br.com.procelula.Activities;
-
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import java.util.HashMap;
-
 import estacio.br.com.procelula.BuildConfig;
 import estacio.br.com.procelula.R;
 import estacio.br.com.procelula.Utils.RequestHandler;
 import estacio.br.com.procelula.Utils.TipoMsg;
 import estacio.br.com.procelula.Utils.Utils;
 
-public class PrincipalActivity extends AppCompatActivity {
+public class PrincipalActivity extends ActionBarActivity implements View.OnTouchListener {
 
     public static final String UPLOAD_URL = "http://www.vidasnoaltar.com/web_services/getVersao.php";
     private LinearLayout aviso;
@@ -31,21 +28,24 @@ public class PrincipalActivity extends AppCompatActivity {
     private LinearLayout aniversariante;
     private LinearLayout ge;
     private LinearLayout celula;
+    private LinearLayout site;
     private Toolbar mToolbar;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-
-        getAviso().setOnTouchListener ((View.OnTouchListener) this);
-        getProgramacao().setOnTouchListener((View.OnTouchListener) this);
-        getAniversariante().setOnTouchListener((View.OnTouchListener) this);
-        getGe().setOnTouchListener((View.OnTouchListener) this);
-        getCelula().setOnTouchListener((View.OnTouchListener) this);
+        //TODO implementar selector para efeito de click botoes tela principal
+        getAviso().setOnTouchListener(this);
+        getProgramacao().setOnTouchListener(this);
+        getAniversariante().setOnTouchListener(this);
+        getGe().setOnTouchListener(this);
+        getCelula().setOnTouchListener(this);
 
         mToolbar = (Toolbar) findViewById(R.id.th_main);
-        mToolbar.setTitle("ProCélula");
+        mToolbar.setTitle("Pro Célula");
         setSupportActionBar(mToolbar);
 
         new CheckVersao().execute();
@@ -54,6 +54,7 @@ public class PrincipalActivity extends AppCompatActivity {
     //Cria o menu da actionbar (barra no topo da tela)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_principal, menu);
         return true;
     }
@@ -61,7 +62,12 @@ public class PrincipalActivity extends AppCompatActivity {
     //Método executado ao selecionar opção da actionbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. TODO The action bar will <verificar necessidade>
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
         if (id == R.id.action_sair) {
             Utils.limpaSharedPreferences(this);
             Intent intent = new Intent(this, LoginActivity.class);
@@ -72,6 +78,7 @@ public class PrincipalActivity extends AppCompatActivity {
             Utils.showMsgAlertOK(PrincipalActivity.this,"Créditos de Desenvolvimento", "Lucas Barque, Fernando, Vinicius e Jean\n Versão 1.1.1", TipoMsg.INFO);
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -89,10 +96,14 @@ public class PrincipalActivity extends AppCompatActivity {
             //mostra janela de progresso
             progressDialog = ProgressDialog.show(PrincipalActivity.this, "Aguarde por favor", "Verificando dados...", true);
         }
+
         @Override
         protected String doInBackground(Void... params) {
+
             HashMap<String,String> data = new HashMap<>();
+
             String result = rh.sendGetRequest(UPLOAD_URL);
+
             return result;
         }
 
@@ -121,7 +132,7 @@ public class PrincipalActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
     public boolean onTouch(View view, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             switch (view.getId()) {
@@ -211,4 +222,6 @@ public class PrincipalActivity extends AppCompatActivity {
         }
         return celula;
     }
+
+
 }

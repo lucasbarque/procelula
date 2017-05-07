@@ -29,6 +29,7 @@ import estacio.br.com.procelula.Utils.AdapterDelete;
 import estacio.br.com.procelula.Utils.TipoMsg;
 import estacio.br.com.procelula.Utils.Utils;
 
+
 public class ProgramacaoActivity extends ActionBarActivity implements AdapterView.OnItemClickListener {
     public static final int REQUEST_SALVAR = 1;
     public static final String PROGRAMACAO_SELECIONADA = "programacao_selecionada";
